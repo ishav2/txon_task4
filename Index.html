@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="Style.css" />
+    <script
+      src="https://kit.fontawesome.com/e9a0678cb6.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- header -->
+    <header id="header">
+      <div class="container">
+        <nav>
+          <ul>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#services">Service</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-text">
+          <p>IT Student</p>
+          <h1>Hi, I am <span> ISHA VEKARIA </span><br />from Gandhinagar</h1>
+        </div>
+      </div>
+    </header>
+
+    <!-- About -->
+    <div id="About">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="Images/User.jpg" alt="user Images" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p id="about-content">
+              With all of my skills, I want to start a prosperous career.
+              Despite the fact that I am conscious of my lack of industrial
+              experience, I am bold and motivated enough to face any challenge.
+              Therefore, working for your organization seems like a suitable
+              place for me to start.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <!-- Skills -->
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>App Devlopment</span><br />Building iOS Apps</li>
+                <li><span>Web Devlopment</span><br />Web Devlopment</li>
+              </ul>
+            </div>
+            <!-- Experience -->
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>December 2022</span><br />Intern at CodeClause</li>
+                <li><span>November 2022</span><br />State level Hackathon</li>
+              </ul>
+            </div>
+            <!-- Education -->
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2022 Running</span><br />IT engineering from LDRP</li>
+                <li><span>2020</span><br />HSC from Mount Carmel High School Gandhinager</li>
+                <li>
+                  <span>2018</span><br />SSC from Mount Carmel Primary School
+                  Gandhinagar
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- services -->
+
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Devlopment</h2>
+            <p>
+              It's the work that happens behind the scenes to make a website
+              look great, work fast and perform well with a seamless user
+              experience.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-apple"></i>
+            <h2>App Devlopment</h2>
+            <p>
+              Application development involves the process, life, and creation
+              of the software aimed at helping users.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- portfolio -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="Images/work1.png" alt="1st work image" />
+            <div class="layer">
+              <h3>Quiz game Application</h3>
+              <p>
+                Players attempt to answer questions correctly about a certain or
+                variety of subjects.
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="Images/work2.png" alt="2nd work image" />
+            <div class="layer">
+              <h3>Calculator Application</h3>
+              <p>
+                It is use to performs arithmetic operations on numbers and make
+                calculation easy.
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="Images/work3.png" alt="3rd work image" />
+            <div class="layer">
+              <h3>Timer Application</h3>
+              <p>
+                An egg timer application is a use to measures the time needed to
+                boil an egg.
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+    <!-- contact -->
+    <div id="contact">
+      <div class="container">
+        <h1 class="sub-title">Contact Me</h1>
+        <div class="row">
+          <div class="contact-right">
+            <form>
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your E-mail"
+                required
+              />
+              <textarea
+                name="message"
+                rows="5"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="button" class="btn btn2">Submit</button>
+            </form>
+          </div>
+          <div class="contact-left">
+            <p><i class="fa-solid fa-envelope"></i>ishavekaria2002@gmail.com</p>
+            <p><i class="fas fa-phone-square-alt"></i>+91 987654321</p>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/savaj-kovil/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              </div>
+            <a
+              href="Images/Resume.pdf"
+              download
+              class="btn btn2"
+              id="Download-Resume"
+              >Download Resume</a
+            >
+          </div>
+        </div>
+      </div>
+      <footer class="copyright">
+        <p>
+          <i id="CopyRight" class="fa-regular fa-copyright"></i> 2022 , Made
+          with <i class="fa-solid fa-heart"></i> by Kovil
+        </p>
+      </footer>
+    </div>
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+  </body>
+</html>
